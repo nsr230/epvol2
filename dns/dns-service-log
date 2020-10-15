@@ -1,0 +1,1846 @@
+Oct 15 10:07:12 external rsyslogd[1124]: [origin software="rsyslogd" swVersion="8.1911.0-3.el8" x-pid="1124" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Oct 15 10:07:12 external rhsmd[31834]: In order for Subscription Manager to provide your system with updates, your system must be registered with the Customer Portal. Please enter your Red Hat login to ensure your system is up-to-date.
+Oct 15 10:18:25 external dnsmasq[1292]: no servers found in /etc/resolv.conf, will retry
+Oct 15 10:18:54 external dnsmasq[1292]: reading /etc/resolv.conf
+Oct 15 10:18:54 external dnsmasq[1292]: using nameserver 168.126.63.1#53
+Oct 15 10:20:33 external dnsmasq[1292]: reading /etc/resolv.conf
+Oct 15 10:20:33 external dnsmasq[1292]: using nameserver 192.168.10.200#53
+Oct 15 10:30:18 external systemd-logind[926]: New session 4 of user root.
+Oct 15 10:30:18 external systemd[1]: Started Session 4 of user root.
+Oct 15 10:31:46 external systemd-logind[926]: Session 4 logged out. Waiting for processes to exit.
+Oct 15 10:31:46 external systemd-logind[926]: Removed session 4.
+Oct 15 10:44:21 external systemd[1]: Starting dnf makecache...
+Oct 15 10:44:22 external dnf[32255]: Metadata cache refreshed recently.
+Oct 15 10:44:22 external systemd[1]: Started dnf makecache.
+Oct 15 10:55:13 external dbus-daemon[834]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.63' (uid=0 pid=32379 comm="/usr/libexec/pk-command-not-found nsookup ns1.exam" label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+Oct 15 10:55:13 external systemd[1]: Starting PackageKit Daemon...
+Oct 15 10:55:13 external dbus-daemon[834]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Oct 15 10:55:13 external systemd[1]: Started PackageKit Daemon.
+Oct 15 11:01:05 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 11:06:06 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 11:27:42 external firewalld[895]: WARNING: AllowZoneDrifting is enabled. This is considered an insecure configuration option. It will be removed in a future release. Please consider disabling it now.
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table mangle --delete POSTROUTING --out-interface virbr0 --protocol udp --destination-port 68 --jump CHECKSUM --checksum-fill' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table nat --delete POSTROUTING --source 192.168.122.0/24 --destination 224.0.0.0/24 --jump RETURN' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table nat --delete POSTROUTING --source 192.168.122.0/24 --destination 255.255.255.255/32 --jump RETURN' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table nat --delete POSTROUTING --source 192.168.122.0/24 -p tcp ! --destination 192.168.122.0/24 --jump MASQUERADE --to-ports 1024-65535' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table nat --delete POSTROUTING --source 192.168.122.0/24 -p udp ! --destination 192.168.122.0/24 --jump MASQUERADE --to-ports 1024-65535' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table nat --delete POSTROUTING --source 192.168.122.0/24 ! --destination 192.168.122.0/24 --jump MASQUERADE' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete FORWARD --destination 192.168.122.0/24 --out-interface virbr0 --match conntrack --ctstate ESTABLISHED,RELATED --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete FORWARD --source 192.168.122.0/24 --in-interface virbr0 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete FORWARD --in-interface virbr0 --out-interface virbr0 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete FORWARD --out-interface virbr0 --jump REJECT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete FORWARD --in-interface virbr0 --jump REJECT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete INPUT --in-interface virbr0 --protocol udp --destination-port 53 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete INPUT --in-interface virbr0 --protocol tcp --destination-port 53 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete OUTPUT --out-interface virbr0 --protocol udp --destination-port 68 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete INPUT --in-interface virbr0 --protocol udp --destination-port 67 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:27:42 external firewalld[895]: WARNING: COMMAND_FAILED: '/usr/sbin/iptables -w10 -w --table filter --delete INPUT --in-interface virbr0 --protocol tcp --destination-port 67 --jump ACCEPT' failed: iptables: Bad rule (does a matching rule exist in that chain?).
+Oct 15 11:36:55 external systemd-logind[926]: Session 1 logged out. Waiting for processes to exit.
+Oct 15 11:36:55 external systemd-logind[926]: Removed session 1.
+Oct 15 11:44:41 external systemd[1]: Starting dnf makecache...
+Oct 15 11:44:42 external dnf[32967]: Metadata cache refreshed recently.
+Oct 15 11:44:42 external systemd[1]: Started dnf makecache.
+Oct 15 12:01:05 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 12:06:06 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 12:45:41 external systemd[1]: Starting dnf makecache...
+Oct 15 12:45:42 external dnf[33483]: CentOS-8 - AppStream                            0.0  B/s |   0  B     00:00
+Oct 15 12:45:42 external dnf[33483]: Errors during downloading metadata for repository 'AppStream':
+Oct 15 12:45:42 external dnf[33483]:  - Curl error (6): Couldn't resolve host name for http://mirrorlist.centos.org/?release=8&arch=x86_64&repo=AppStream&infra=stock [Could not resolve host: mirrorlist.centos.org]
+Oct 15 12:45:42 external dnf[33483]: Error: Failed to download metadata for repo 'AppStream': Cannot prepare internal mirrorlist: Curl error (6): Couldn't resolve host name for http://mirrorlist.centos.org/?release=8&arch=x86_64&repo=AppStream&infra=stock [Could not resolve host: mirrorlist.centos.org]
+Oct 15 12:45:42 external systemd[1]: dnf-makecache.service: Main process exited, code=exited, status=1/FAILURE
+Oct 15 12:45:42 external systemd[1]: dnf-makecache.service: Failed with result 'exit-code'.
+Oct 15 12:45:42 external systemd[1]: Failed to start dnf makecache.
+Oct 15 13:01:05 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 13:05:18 external dnsmasq[1292]: reading /etc/resolv.conf
+Oct 15 13:05:18 external dnsmasq[1292]: using nameserver 168.126.63.1#53
+Oct 15 13:05:18 external dnsmasq[1292]: using nameserver 192.168.10.200#53
+Oct 15 13:05:26 external systemd[1]: Started /usr/bin/systemctl start man-db-cache-update.
+Oct 15 13:05:26 external systemd[1]: Starting man-db-cache-update.service...
+Oct 15 13:05:27 external systemd[1]: Started man-db-cache-update.service.
+Oct 15 13:06:06 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 13:17:34 external dbus-daemon[834]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.85' (uid=0 pid=35043 comm="/usr/libexec/pk-command-not-found gir remote -v " label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+Oct 15 13:17:34 external systemd[1]: Starting PackageKit Daemon...
+Oct 15 13:17:34 external dbus-daemon[834]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Oct 15 13:17:34 external systemd[1]: Started PackageKit Daemon.
+Oct 15 13:46:41 external systemd[1]: Starting dnf makecache...
+Oct 15 13:46:42 external dnf[35336]: Metadata cache refreshed recently.
+Oct 15 13:46:42 external systemd[1]: Started dnf makecache.
+Oct 15 14:01:06 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 14:06:06 external named[31783]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 14:47:21 external systemd[1]: Starting dnf makecache...
+Oct 15 14:47:22 external dnf[35878]: Metadata cache refreshed recently.
+Oct 15 14:47:22 external systemd[1]: Started dnf makecache.
+Oct 15 14:54:53 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 14:54:53 external named[31783]: received control channel command 'stop'
+Oct 15 14:54:53 external named[31783]: shutting down: flushing changes
+Oct 15 14:54:53 external named[31783]: stopping command channel on 127.0.0.1#953
+Oct 15 14:54:53 external named[31783]: stopping command channel on ::1#953
+Oct 15 14:54:53 external named[31783]: no longer listening on 127.0.0.1#53
+Oct 15 14:54:53 external named[31783]: no longer listening on 192.168.10.200#53
+Oct 15 14:54:53 external named[31783]: exiting
+Oct 15 14:54:53 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 14:55:04 external systemd[1]: Reloading.
+Oct 15 14:55:32 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 14:55:32 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 14:55:32 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 14:55:32 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 14:55:32 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 14:55:32 external bash[36147]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 14:55:32 external bash[36147]: zone localhost/IN: loaded serial 0
+Oct 15 14:55:32 external bash[36147]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external bash[36147]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external bash[36147]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external bash[36147]: zone example.com/IN: loaded serial 0
+Oct 15 14:55:32 external bash[36147]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 14:55:32 external named[36153]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 14:55:32 external named[36153]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 14:55:32 external named[36153]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 14:55:32 external named[36153]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 14:55:32 external named[36153]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 14:55:32 external named[36153]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 14:55:32 external named[36153]: compiled with libxml2 version: 2.9.7
+Oct 15 14:55:32 external named[36153]: linked to libxml2 version: 20907
+Oct 15 14:55:32 external named[36153]: compiled with zlib version: 1.2.11
+Oct 15 14:55:32 external named[36153]: linked to zlib version: 1.2.11
+Oct 15 14:55:32 external named[36153]: threads support is enabled
+Oct 15 14:55:32 external named[36153]: ----------------------------------------------------
+Oct 15 14:55:32 external named[36153]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 14:55:32 external named[36153]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 14:55:32 external named[36153]: corporation.  Support and training for BIND 9 are
+Oct 15 14:55:32 external named[36153]: available at https://www.isc.org/support
+Oct 15 14:55:32 external named[36153]: ----------------------------------------------------
+Oct 15 14:55:32 external named[36153]: adjusted limit on open files from 262144 to 1048576
+Oct 15 14:55:32 external named[36153]: found 2 CPUs, using 2 worker threads
+Oct 15 14:55:32 external named[36153]: using 1 UDP listener per interface
+Oct 15 14:55:32 external named[36153]: using up to 21000 sockets
+Oct 15 14:55:32 external named[36153]: loading configuration from '/etc/named.conf'
+Oct 15 14:55:32 external named[36153]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 14:55:32 external named[36153]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 14:55:32 external named[36153]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 14:55:32 external named[36153]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 14:55:32 external named[36153]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 14:55:32 external named[36153]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 14:55:32 external named[36153]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 14:55:32 external named[36153]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 14:55:32 external named[36153]: generating session key for dynamic DNS
+Oct 15 14:55:32 external named[36153]: sizing zone task pool based on 8 zones
+Oct 15 14:55:32 external named[36153]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 14:55:32 external named[36153]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 14:55:32 external named[36153]: automatic empty zone: HOME.ARPA
+Oct 15 14:55:32 external named[36153]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 14:55:32 external named[36153]: configuring command channel from '/etc/rndc.key'
+Oct 15 14:55:32 external named[36153]: command channel listening on 127.0.0.1#953
+Oct 15 14:55:32 external named[36153]: configuring command channel from '/etc/rndc.key'
+Oct 15 14:55:32 external named[36153]: command channel listening on ::1#953
+Oct 15 14:55:32 external named[36153]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 14:55:32 external named[36153]: managed-keys-zone: loaded serial 12
+Oct 15 14:55:32 external named[36153]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: zone localhost/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: zone example.com/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 14:55:32 external named[36153]: all zones loaded
+Oct 15 14:55:32 external named[36153]: running
+Oct 15 14:55:32 external named[36153]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 14:55:32 external named[36153]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 14:55:32 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 14:55:32 external named[36153]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 14:57:34 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 14:57:34 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 14:57:34 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 14:57:34 external bash[36191]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 14:57:34 external bash[36191]: zone localhost/IN: loaded serial 0
+Oct 15 14:57:34 external bash[36191]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 14:57:34 external bash[36191]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:57:34 external bash[36191]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:57:34 external bash[36191]: zone example.com/IN: loaded serial 0
+Oct 15 14:57:34 external bash[36191]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 14:57:34 external named[36196]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 14:57:34 external named[36196]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 14:57:34 external named[36196]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 14:57:34 external named[36196]: running as: named -u named -c /etc/named.conf
+Oct 15 14:57:34 external named[36196]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 14:57:34 external named[36196]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 14:57:34 external named[36196]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 14:57:34 external named[36196]: compiled with libxml2 version: 2.9.7
+Oct 15 14:57:34 external named[36196]: linked to libxml2 version: 20907
+Oct 15 14:57:34 external named[36196]: compiled with zlib version: 1.2.11
+Oct 15 14:57:34 external named[36196]: linked to zlib version: 1.2.11
+Oct 15 14:57:34 external named[36196]: threads support is enabled
+Oct 15 14:57:34 external named[36196]: ----------------------------------------------------
+Oct 15 14:57:34 external named[36196]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 14:57:34 external named[36196]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 14:57:34 external named[36196]: corporation.  Support and training for BIND 9 are
+Oct 15 14:57:34 external named[36196]: available at https://www.isc.org/support
+Oct 15 14:57:34 external named[36196]: ----------------------------------------------------
+Oct 15 14:57:34 external named[36196]: adjusted limit on open files from 262144 to 1048576
+Oct 15 14:57:34 external named[36196]: found 2 CPUs, using 2 worker threads
+Oct 15 14:57:34 external named[36196]: using 1 UDP listener per interface
+Oct 15 14:57:34 external named[36196]: using up to 21000 sockets
+Oct 15 14:57:34 external named[36196]: loading configuration from '/etc/named.conf'
+Oct 15 14:57:34 external named[36196]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 14:57:34 external named[36196]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 14:57:34 external named[36196]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 14:57:34 external named[36196]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 14:57:34 external named[36196]: using default UDP/IPv4 port range: [32768, 60999]
+Oct 15 14:57:34 external named[36196]: using default UDP/IPv6 port range: [32768, 60999]
+Oct 15 14:57:34 external named[36196]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 14:57:34 external named[36196]: binding TCP socket: address in use
+Oct 15 14:57:34 external named[36196]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 14:57:34 external named[36196]: binding TCP socket: address in use
+Oct 15 14:57:34 external named[36196]: unable to listen on any configured interfaces
+Oct 15 14:57:34 external named[36196]: loading configuration: failure
+Oct 15 14:57:34 external named[36196]: exiting (due to fatal error)
+Oct 15 14:57:34 external systemd[1]: named.service: Control process exited, code=exited status=1
+Oct 15 14:57:34 external systemd[1]: named.service: Failed with result 'exit-code'.
+Oct 15 14:57:34 external systemd[1]: Failed to start Berkeley Internet Name Domain (DNS).
+Oct 15 14:59:43 external systemd[1]: Reloading.
+Oct 15 15:06:06 external named[36153]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 15:47:41 external systemd[1]: Starting dnf makecache...
+Oct 15 15:47:43 external dnf[36743]: CentOS-8 - AppStream                            5.6 kB/s | 4.3 kB     00:00
+Oct 15 15:47:43 external dnf[36743]: CentOS-8 - Base                                 6.4 kB/s | 3.9 kB     00:00
+Oct 15 15:47:44 external dnf[36743]: CentOS-8 - Extras                               4.8 kB/s | 1.5 kB     00:00
+Oct 15 15:47:44 external dnf[36743]: CentOS-8 - PowerTools                           6.9 kB/s | 4.3 kB     00:00
+Oct 15 15:47:45 external dnf[36743]: Extra Packages for Enterprise Linux Modular 8 - 6.2 kB/s | 8.0 kB     00:01
+Oct 15 15:47:47 external dnf[36743]: Extra Packages for Enterprise Linux 8 - x86_64  4.0 kB/s | 5.0 kB     00:01
+Oct 15 15:47:47 external dnf[36743]: Metadata cache created.
+Oct 15 15:47:47 external systemd[1]: Started dnf makecache.
+Oct 15 15:53:20 external dbus-daemon[834]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.95' (uid=0 pid=36845 comm="/usr/libexec/pk-command-not-found lsa " label="unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023")
+Oct 15 15:53:20 external systemd[1]: Starting PackageKit Daemon...
+Oct 15 15:53:20 external dbus-daemon[834]: [system] Successfully activated service 'org.freedesktop.PackageKit'
+Oct 15 15:53:20 external systemd[1]: Started PackageKit Daemon.
+Oct 15 15:55:32 external named[36153]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 15:57:07 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 15:57:07 external named[36153]: received control channel command 'stop'
+Oct 15 15:57:07 external named[36153]: shutting down: flushing changes
+Oct 15 15:57:07 external named[36153]: stopping command channel on 127.0.0.1#953
+Oct 15 15:57:07 external named[36153]: stopping command channel on ::1#953
+Oct 15 15:57:07 external named[36153]: no longer listening on 127.0.0.1#53
+Oct 15 15:57:07 external named[36153]: no longer listening on 192.168.10.200#53
+Oct 15 15:57:07 external named[36153]: exiting
+Oct 15 15:57:07 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 15:57:07 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 15:57:07 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 15:57:07 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 15:57:07 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 15:57:07 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 15:57:07 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 15:57:07 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 15:57:07 external bash[37035]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 15:57:07 external bash[37035]: zone localhost/IN: loaded serial 0
+Oct 15 15:57:07 external bash[37035]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external bash[37035]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external bash[37035]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external bash[37035]: zone example.com/IN: loaded serial 0
+Oct 15 15:57:07 external bash[37035]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 15:57:07 external named[37039]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 15:57:07 external named[37039]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 15:57:07 external named[37039]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 15:57:07 external named[37039]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 15:57:07 external named[37039]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 15:57:07 external named[37039]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 15:57:07 external named[37039]: compiled with libxml2 version: 2.9.7
+Oct 15 15:57:07 external named[37039]: linked to libxml2 version: 20907
+Oct 15 15:57:07 external named[37039]: compiled with zlib version: 1.2.11
+Oct 15 15:57:07 external named[37039]: linked to zlib version: 1.2.11
+Oct 15 15:57:07 external named[37039]: threads support is enabled
+Oct 15 15:57:07 external named[37039]: ----------------------------------------------------
+Oct 15 15:57:07 external named[37039]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 15:57:07 external named[37039]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 15:57:07 external named[37039]: corporation.  Support and training for BIND 9 are
+Oct 15 15:57:07 external named[37039]: available at https://www.isc.org/support
+Oct 15 15:57:07 external named[37039]: ----------------------------------------------------
+Oct 15 15:57:07 external named[37039]: adjusted limit on open files from 262144 to 1048576
+Oct 15 15:57:07 external named[37039]: found 2 CPUs, using 2 worker threads
+Oct 15 15:57:07 external named[37039]: using 1 UDP listener per interface
+Oct 15 15:57:07 external named[37039]: using up to 21000 sockets
+Oct 15 15:57:07 external named[37039]: loading configuration from '/etc/named.conf'
+Oct 15 15:57:07 external named[37039]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 15:57:07 external named[37039]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 15:57:07 external named[37039]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 15:57:07 external named[37039]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 15:57:07 external named[37039]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 15:57:07 external named[37039]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 15:57:07 external named[37039]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 15:57:07 external named[37039]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 15:57:07 external named[37039]: generating session key for dynamic DNS
+Oct 15 15:57:07 external named[37039]: sizing zone task pool based on 8 zones
+Oct 15 15:57:07 external named[37039]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 15:57:07 external named[37039]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 15:57:07 external named[37039]: automatic empty zone: HOME.ARPA
+Oct 15 15:57:07 external named[37039]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 15:57:07 external named[37039]: configuring command channel from '/etc/rndc.key'
+Oct 15 15:57:07 external named[37039]: command channel listening on 127.0.0.1#953
+Oct 15 15:57:07 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 15:57:07 external named[37039]: configuring command channel from '/etc/rndc.key'
+Oct 15 15:57:07 external named[37039]: command channel listening on ::1#953
+Oct 15 15:57:07 external named[37039]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 15:57:07 external named[37039]: managed-keys-zone: loaded serial 15
+Oct 15 15:57:07 external named[37039]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: zone example.com/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: zone localhost/IN: loaded serial 0
+Oct 15 15:57:07 external named[37039]: all zones loaded
+Oct 15 15:57:07 external named[37039]: running
+Oct 15 15:57:07 external named[37039]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 15:57:07 external named[37039]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 15:57:07 external named[37039]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 16:02:53 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 16:02:53 external named[37039]: received control channel command 'stop'
+Oct 15 16:02:53 external named[37039]: shutting down: flushing changes
+Oct 15 16:02:53 external named[37039]: stopping command channel on 127.0.0.1#953
+Oct 15 16:02:53 external named[37039]: stopping command channel on ::1#953
+Oct 15 16:02:53 external named[37039]: no longer listening on 127.0.0.1#53
+Oct 15 16:02:53 external named[37039]: no longer listening on 192.168.10.200#53
+Oct 15 16:02:53 external named[37039]: exiting
+Oct 15 16:02:53 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 16:02:53 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 16:02:53 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 16:02:53 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 16:02:53 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 16:02:53 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 16:02:53 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 16:02:53 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 16:02:53 external bash[37237]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 16:02:53 external bash[37237]: zone localhost/IN: loaded serial 0
+Oct 15 16:02:53 external bash[37237]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external bash[37237]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external bash[37237]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external bash[37237]: zone example.com/IN: loaded serial 0
+Oct 15 16:02:53 external bash[37237]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external named[37241]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 16:02:53 external named[37241]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 16:02:53 external named[37241]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 16:02:53 external named[37241]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 16:02:53 external named[37241]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 16:02:53 external named[37241]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 16:02:53 external named[37241]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 16:02:53 external named[37241]: compiled with libxml2 version: 2.9.7
+Oct 15 16:02:53 external named[37241]: linked to libxml2 version: 20907
+Oct 15 16:02:53 external named[37241]: compiled with zlib version: 1.2.11
+Oct 15 16:02:53 external named[37241]: linked to zlib version: 1.2.11
+Oct 15 16:02:53 external named[37241]: threads support is enabled
+Oct 15 16:02:53 external named[37241]: ----------------------------------------------------
+Oct 15 16:02:53 external named[37241]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 16:02:53 external named[37241]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 16:02:53 external named[37241]: corporation.  Support and training for BIND 9 are
+Oct 15 16:02:53 external named[37241]: available at https://www.isc.org/support
+Oct 15 16:02:53 external named[37241]: ----------------------------------------------------
+Oct 15 16:02:53 external named[37241]: adjusted limit on open files from 262144 to 1048576
+Oct 15 16:02:53 external named[37241]: found 2 CPUs, using 2 worker threads
+Oct 15 16:02:53 external named[37241]: using 1 UDP listener per interface
+Oct 15 16:02:53 external named[37241]: using up to 21000 sockets
+Oct 15 16:02:53 external named[37241]: loading configuration from '/etc/named.conf'
+Oct 15 16:02:53 external named[37241]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 16:02:53 external named[37241]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 16:02:53 external named[37241]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 16:02:53 external named[37241]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 16:02:53 external named[37241]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 16:02:53 external named[37241]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 16:02:53 external named[37241]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 16:02:53 external named[37241]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 16:02:53 external named[37241]: generating session key for dynamic DNS
+Oct 15 16:02:53 external named[37241]: sizing zone task pool based on 8 zones
+Oct 15 16:02:53 external named[37241]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 16:02:53 external named[37241]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 16:02:53 external named[37241]: automatic empty zone: HOME.ARPA
+Oct 15 16:02:53 external named[37241]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 16:02:53 external named[37241]: configuring command channel from '/etc/rndc.key'
+Oct 15 16:02:53 external named[37241]: command channel listening on 127.0.0.1#953
+Oct 15 16:02:53 external named[37241]: configuring command channel from '/etc/rndc.key'
+Oct 15 16:02:53 external named[37241]: command channel listening on ::1#953
+Oct 15 16:02:53 external named[37241]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 16:02:53 external named[37241]: managed-keys-zone: loaded serial 16
+Oct 15 16:02:53 external named[37241]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external named[37241]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external named[37241]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:02:53 external named[37241]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 16:02:53 external named[37241]: zone localhost/IN: loaded serial 0
+Oct 15 16:02:53 external named[37241]: zone example.com/IN: loaded serial 0
+Oct 15 16:02:54 external named[37241]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:02:54 external named[37241]: all zones loaded
+Oct 15 16:02:54 external named[37241]: running
+Oct 15 16:02:54 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 16:02:54 external named[37241]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 16:02:54 external named[37241]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 16:02:54 external named[37241]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 16:13:33 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 16:13:33 external named[37241]: received control channel command 'stop'
+Oct 15 16:13:33 external named[37241]: shutting down: flushing changes
+Oct 15 16:13:33 external named[37241]: stopping command channel on 127.0.0.1#953
+Oct 15 16:13:33 external named[37241]: stopping command channel on ::1#953
+Oct 15 16:13:33 external named[37241]: no longer listening on 127.0.0.1#53
+Oct 15 16:13:33 external named[37241]: no longer listening on 192.168.10.200#53
+Oct 15 16:13:33 external named[37241]: exiting
+Oct 15 16:13:34 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 16:13:34 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 16:13:34 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 16:13:34 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 16:13:34 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 16:13:34 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 16:13:34 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 16:13:34 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 16:13:34 external bash[37456]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 16:13:34 external bash[37456]: zone localhost/IN: loaded serial 0
+Oct 15 16:13:34 external bash[37456]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external bash[37456]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external bash[37456]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external bash[37456]: zone example.com/IN: loaded serial 0
+Oct 15 16:13:34 external bash[37456]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 16:13:34 external named[37461]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 16:13:34 external named[37461]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 16:13:34 external named[37461]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 16:13:34 external named[37461]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 16:13:34 external named[37461]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 16:13:34 external named[37461]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 16:13:34 external named[37461]: compiled with libxml2 version: 2.9.7
+Oct 15 16:13:34 external named[37461]: linked to libxml2 version: 20907
+Oct 15 16:13:34 external named[37461]: compiled with zlib version: 1.2.11
+Oct 15 16:13:34 external named[37461]: linked to zlib version: 1.2.11
+Oct 15 16:13:34 external named[37461]: threads support is enabled
+Oct 15 16:13:34 external named[37461]: ----------------------------------------------------
+Oct 15 16:13:34 external named[37461]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 16:13:34 external named[37461]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 16:13:34 external named[37461]: corporation.  Support and training for BIND 9 are
+Oct 15 16:13:34 external named[37461]: available at https://www.isc.org/support
+Oct 15 16:13:34 external named[37461]: ----------------------------------------------------
+Oct 15 16:13:34 external named[37461]: adjusted limit on open files from 262144 to 1048576
+Oct 15 16:13:34 external named[37461]: found 2 CPUs, using 2 worker threads
+Oct 15 16:13:34 external named[37461]: using 1 UDP listener per interface
+Oct 15 16:13:34 external named[37461]: using up to 21000 sockets
+Oct 15 16:13:34 external named[37461]: loading configuration from '/etc/named.conf'
+Oct 15 16:13:34 external named[37461]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 16:13:34 external named[37461]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 16:13:34 external named[37461]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 16:13:34 external named[37461]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 16:13:34 external named[37461]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 16:13:34 external named[37461]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 16:13:34 external named[37461]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 16:13:34 external named[37461]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 16:13:34 external named[37461]: generating session key for dynamic DNS
+Oct 15 16:13:34 external named[37461]: sizing zone task pool based on 8 zones
+Oct 15 16:13:34 external named[37461]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 16:13:34 external named[37461]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 16:13:34 external named[37461]: automatic empty zone: HOME.ARPA
+Oct 15 16:13:34 external named[37461]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 16:13:34 external named[37461]: configuring command channel from '/etc/rndc.key'
+Oct 15 16:13:34 external named[37461]: command channel listening on 127.0.0.1#953
+Oct 15 16:13:34 external named[37461]: configuring command channel from '/etc/rndc.key'
+Oct 15 16:13:34 external named[37461]: command channel listening on ::1#953
+Oct 15 16:13:34 external named[37461]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 16:13:34 external named[37461]: managed-keys-zone: loaded serial 17
+Oct 15 16:13:34 external named[37461]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: zone localhost/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: zone example.com/IN: loaded serial 0
+Oct 15 16:13:34 external named[37461]: all zones loaded
+Oct 15 16:13:34 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 16:13:34 external named[37461]: running
+Oct 15 16:13:34 external named[37461]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 16:13:34 external named[37461]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 16:13:34 external named[37461]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 16:24:38 external dnsmasq[1292]: reading /etc/resolv.conf
+Oct 15 16:24:38 external dnsmasq[1292]: using nameserver 192.168.10.200#53
+Oct 15 16:48:41 external systemd[1]: Starting dnf makecache...
+Oct 15 16:48:42 external dnf[37773]: Metadata cache refreshed recently.
+Oct 15 16:48:42 external systemd[1]: Started dnf makecache.
+Oct 15 17:01:21 external dnsmasq[1292]: reading /etc/resolv.conf
+Oct 15 17:01:21 external dnsmasq[1292]: using nameserver 192.168.10.200#53
+Oct 15 17:01:21 external dnsmasq[1292]: using nameserver 168.126.63.1#53
+Oct 15 17:01:41 external dnsmasq[1292]: reading /etc/resolv.conf
+Oct 15 17:01:41 external dnsmasq[1292]: using nameserver 192.168.10.200#53
+Oct 15 17:02:54 external named[37461]: managed-keys-zone: Unable to fetch DNSKEY set '.': failure
+Oct 15 17:03:57 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 17:03:57 external named[37461]: received control channel command 'stop'
+Oct 15 17:03:57 external named[37461]: shutting down: flushing changes
+Oct 15 17:03:57 external named[37461]: stopping command channel on 127.0.0.1#953
+Oct 15 17:03:57 external named[37461]: stopping command channel on ::1#953
+Oct 15 17:03:57 external named[37461]: no longer listening on 127.0.0.1#53
+Oct 15 17:03:57 external named[37461]: no longer listening on 192.168.10.200#53
+Oct 15 17:03:57 external named[37461]: exiting
+Oct 15 17:03:57 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 17:03:57 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:03:57 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:03:57 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 17:03:57 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 17:03:57 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:03:58 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:03:58 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 17:03:58 external bash[38080]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:03:58 external bash[38080]: zone localhost/IN: loaded serial 0
+Oct 15 17:03:58 external bash[38080]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external bash[38080]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external bash[38080]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external bash[38080]: zone example.com/IN: loaded serial 0
+Oct 15 17:03:58 external bash[38080]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 17:03:58 external named[38084]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 17:03:58 external named[38084]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 17:03:58 external named[38084]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 17:03:58 external named[38084]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 17:03:58 external named[38084]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:03:58 external named[38084]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:03:58 external named[38084]: compiled with libxml2 version: 2.9.7
+Oct 15 17:03:58 external named[38084]: linked to libxml2 version: 20907
+Oct 15 17:03:58 external named[38084]: compiled with zlib version: 1.2.11
+Oct 15 17:03:58 external named[38084]: linked to zlib version: 1.2.11
+Oct 15 17:03:58 external named[38084]: threads support is enabled
+Oct 15 17:03:58 external named[38084]: ----------------------------------------------------
+Oct 15 17:03:58 external named[38084]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 17:03:58 external named[38084]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 17:03:58 external named[38084]: corporation.  Support and training for BIND 9 are
+Oct 15 17:03:58 external named[38084]: available at https://www.isc.org/support
+Oct 15 17:03:58 external named[38084]: ----------------------------------------------------
+Oct 15 17:03:58 external named[38084]: adjusted limit on open files from 262144 to 1048576
+Oct 15 17:03:58 external named[38084]: found 2 CPUs, using 2 worker threads
+Oct 15 17:03:58 external named[38084]: using 1 UDP listener per interface
+Oct 15 17:03:58 external named[38084]: using up to 21000 sockets
+Oct 15 17:03:58 external named[38084]: loading configuration from '/etc/named.conf'
+Oct 15 17:03:58 external named[38084]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 17:03:58 external named[38084]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 17:03:58 external named[38084]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 17:03:58 external named[38084]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 17:03:58 external named[38084]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 17:03:58 external named[38084]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 17:03:58 external named[38084]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 17:03:58 external named[38084]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 17:03:58 external named[38084]: generating session key for dynamic DNS
+Oct 15 17:03:58 external named[38084]: sizing zone task pool based on 8 zones
+Oct 15 17:03:58 external named[38084]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:03:58 external named[38084]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 17:03:58 external named[38084]: automatic empty zone: HOME.ARPA
+Oct 15 17:03:58 external named[38084]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:03:58 external named[38084]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:03:58 external named[38084]: command channel listening on 127.0.0.1#953
+Oct 15 17:03:58 external named[38084]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:03:58 external named[38084]: command channel listening on ::1#953
+Oct 15 17:03:58 external named[38084]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 17:03:58 external named[38084]: managed-keys-zone: loaded serial 19
+Oct 15 17:03:58 external named[38084]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: zone localhost/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: zone example.com/IN: loaded serial 0
+Oct 15 17:03:58 external named[38084]: all zones loaded
+Oct 15 17:03:58 external named[38084]: running
+Oct 15 17:03:58 external named[38084]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 17:03:58 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 17:03:58 external named[38084]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:2::c#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:2d::d#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:a8::e#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:2f::f#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:dc3::35#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:9f::42#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:7fd::1#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:200::b#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:500:1::53#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './NS/IN': 2001:7fe::53#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+Oct 15 17:03:58 external named[38084]: network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+Oct 15 17:03:58 external named[38084]: managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+Oct 15 17:03:59 external named[38084]: resolver priming query complete
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:39c1::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:500:d937::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:500:856e::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:501:b1f9::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:502:8cc::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:a83e::2:30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:d414::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:d2d::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:83eb::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:502:7094::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:502:1ca1::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:231d::2:30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:503:eea3::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/A/IN': 2001:500:856e::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/A/IN': 2001:500:d937::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/A/IN': 2001:503:83eb::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/A/IN': 2001:503:d2d::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/A/IN': 2001:502:1ca1::30#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:4860:4802:34::a#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:4860:4802:32::a#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:4860:4802:36::a#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving 'www.google.com/AAAA/IN': 2001:4860:4802:38::a#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2620:37:e000::53#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:dd8:6::101#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:500:87::87#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:67c:e0::1#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:43f8:110::10#53
+Oct 15 17:04:01 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:13c7:7010::53#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving 'r.arin.net/A/IN': 2001:500:13::108#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving 'r.arin.net/A/IN': 2001:500:14:6050:ad::1#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving 'r.arin.net/A/IN': 2001:500:31::108#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving 'x.arin.net/AAAA/IN': 2001:500:31::108#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:500:14:6050:ad::1#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:500:127::30#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:500:f0::63#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving '164.31.217.172.in-addr.arpa/PTR/IN': 2001:500:13::63#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving 'arin.authdns.ripe.net/A/IN': 2001:500:13::c7d4:35#53
+Oct 15 17:04:03 external named[38084]: network unreachable resolving 'arin.authdns.ripe.net/A/IN': 2001:dd8:12::53#53
+Oct 15 17:05:41 external named[38084]: network unreachable resolving 'in-addr.arpa/DNSKEY/IN': 2001:67c:e0::1#53
+Oct 15 17:05:41 external named[38084]: network unreachable resolving 'in-addr.arpa/DNSKEY/IN': 2001:13c7:7010::53#53
+Oct 15 17:05:42 external named[38084]: network unreachable resolving '217.172.in-addr.arpa/DS/IN': 2001:500:13::63#53
+Oct 15 17:11:32 external named[38084]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:48::1#53
+Oct 15 17:11:32 external named[38084]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:c::1#53
+Oct 15 17:11:32 external named[38084]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:b::1#53
+Oct 15 17:11:32 external named[38084]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:f::1#53
+Oct 15 17:11:32 external named[38084]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:40::1#53
+Oct 15 17:11:32 external named[38084]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:e::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'd.dns.kr/AAAA/IN': 2001:dcc:5::100#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'e.dns.kr/AAAA/IN': 2001:dcc:6::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'e.dns.kr/AAAA/IN': 2001:dc5:a::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'f.dns.kr/AAAA/IN': 2001:dcc:4::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'f.dns.kr/AAAA/IN': 2001:dc5:a::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'e.dns.kr/AAAA/IN': 2001:dcc:4::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'f.dns.kr/AAAA/IN': 2001:dcc:6::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'd.dns.kr/AAAA/IN': 2001:dcc:6::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'g.dns.kr/AAAA/IN': 2001:dcc:4::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'd.dns.kr/AAAA/IN': 2001:dc5:a::1#53
+Oct 15 17:11:34 external named[38084]: network unreachable resolving 'd.dns.kr/AAAA/IN': 2001:dcc:4::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2a01:618:400::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2a01:618:400::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2401:fd80:404::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2401:fd80:404::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2401:fd80:400::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2401:fd80:400::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2a01:618:404::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2a01:618:404::1#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2001:502:ad09::3#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2001:502:ad09::3#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns6.dnsever.co.uk/A/IN': 2001:502:ad09::3#53
+Oct 15 17:11:35 external named[38084]: network unreachable resolving 'ns6.dnsever.co.uk/AAAA/IN': 2001:502:ad09::3#53
+Oct 15 17:18:47 external systemd[1]: Started Session 5 of user root.
+Oct 15 17:18:47 external systemd-logind[926]: New session 5 of user root.
+Oct 15 17:20:04 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 17:20:04 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 17:20:04 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 17:20:04 external bash[38308]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:20:04 external bash[38308]: zone localhost/IN: loaded serial 0
+Oct 15 17:20:04 external bash[38308]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:20:04 external bash[38308]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:04 external bash[38308]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:04 external bash[38308]: zone example.com/IN: loaded serial 0
+Oct 15 17:20:04 external bash[38308]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:04 external named[38315]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 17:20:04 external named[38315]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 17:20:04 external named[38315]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 17:20:04 external named[38315]: running as: named -u named -c /etc/named.conf
+Oct 15 17:20:04 external named[38315]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 17:20:04 external named[38315]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:20:04 external named[38315]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:20:04 external named[38315]: compiled with libxml2 version: 2.9.7
+Oct 15 17:20:04 external named[38315]: linked to libxml2 version: 20907
+Oct 15 17:20:04 external named[38315]: compiled with zlib version: 1.2.11
+Oct 15 17:20:04 external named[38315]: linked to zlib version: 1.2.11
+Oct 15 17:20:04 external named[38315]: threads support is enabled
+Oct 15 17:20:04 external named[38315]: ----------------------------------------------------
+Oct 15 17:20:04 external named[38315]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 17:20:04 external named[38315]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 17:20:04 external named[38315]: corporation.  Support and training for BIND 9 are
+Oct 15 17:20:04 external named[38315]: available at https://www.isc.org/support
+Oct 15 17:20:04 external named[38315]: ----------------------------------------------------
+Oct 15 17:20:04 external named[38315]: adjusted limit on open files from 262144 to 1048576
+Oct 15 17:20:04 external named[38315]: found 2 CPUs, using 2 worker threads
+Oct 15 17:20:04 external named[38315]: using 1 UDP listener per interface
+Oct 15 17:20:04 external named[38315]: using up to 21000 sockets
+Oct 15 17:20:04 external named[38315]: loading configuration from '/etc/named.conf'
+Oct 15 17:20:04 external named[38315]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 17:20:04 external named[38315]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 17:20:04 external named[38315]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 17:20:04 external named[38315]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 17:20:04 external named[38315]: using default UDP/IPv4 port range: [32768, 60999]
+Oct 15 17:20:04 external named[38315]: using default UDP/IPv6 port range: [32768, 60999]
+Oct 15 17:20:04 external named[38315]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 17:20:04 external named[38315]: binding TCP socket: address in use
+Oct 15 17:20:04 external named[38315]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 17:20:04 external named[38315]: binding TCP socket: address in use
+Oct 15 17:20:04 external named[38315]: unable to listen on any configured interfaces
+Oct 15 17:20:04 external named[38315]: loading configuration: failure
+Oct 15 17:20:04 external named[38315]: exiting (due to fatal error)
+Oct 15 17:20:04 external systemd[1]: named.service: Control process exited, code=exited status=1
+Oct 15 17:20:04 external systemd[1]: named.service: Failed with result 'exit-code'.
+Oct 15 17:20:04 external systemd[1]: Failed to start Berkeley Internet Name Domain (DNS).
+Oct 15 17:20:07 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 17:20:07 external named[38084]: received control channel command 'stop'
+Oct 15 17:20:07 external named[38084]: shutting down: flushing changes
+Oct 15 17:20:07 external named[38084]: stopping command channel on 127.0.0.1#953
+Oct 15 17:20:07 external named[38084]: stopping command channel on ::1#953
+Oct 15 17:20:07 external named[38084]: no longer listening on 127.0.0.1#53
+Oct 15 17:20:07 external named[38084]: no longer listening on 192.168.10.200#53
+Oct 15 17:20:08 external named[38084]: exiting
+Oct 15 17:20:08 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 17:20:08 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:20:08 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:20:08 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 17:20:08 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 17:20:08 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:20:08 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:20:08 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 17:20:08 external bash[38451]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:20:08 external bash[38451]: zone localhost/IN: loaded serial 0
+Oct 15 17:20:08 external bash[38451]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external bash[38451]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external bash[38451]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external bash[38451]: zone example.com/IN: loaded serial 0
+Oct 15 17:20:08 external bash[38451]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 17:20:08 external named[38456]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 17:20:08 external named[38456]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 17:20:08 external named[38456]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 17:20:08 external named[38456]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 17:20:08 external named[38456]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:20:08 external named[38456]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:20:08 external named[38456]: compiled with libxml2 version: 2.9.7
+Oct 15 17:20:08 external named[38456]: linked to libxml2 version: 20907
+Oct 15 17:20:08 external named[38456]: compiled with zlib version: 1.2.11
+Oct 15 17:20:08 external named[38456]: linked to zlib version: 1.2.11
+Oct 15 17:20:08 external named[38456]: threads support is enabled
+Oct 15 17:20:08 external named[38456]: ----------------------------------------------------
+Oct 15 17:20:08 external named[38456]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 17:20:08 external named[38456]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 17:20:08 external named[38456]: corporation.  Support and training for BIND 9 are
+Oct 15 17:20:08 external named[38456]: available at https://www.isc.org/support
+Oct 15 17:20:08 external named[38456]: ----------------------------------------------------
+Oct 15 17:20:08 external named[38456]: adjusted limit on open files from 262144 to 1048576
+Oct 15 17:20:08 external named[38456]: found 2 CPUs, using 2 worker threads
+Oct 15 17:20:08 external named[38456]: using 1 UDP listener per interface
+Oct 15 17:20:08 external named[38456]: using up to 21000 sockets
+Oct 15 17:20:08 external named[38456]: loading configuration from '/etc/named.conf'
+Oct 15 17:20:08 external named[38456]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 17:20:08 external named[38456]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 17:20:08 external named[38456]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 17:20:08 external named[38456]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 17:20:08 external named[38456]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 17:20:08 external named[38456]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 17:20:08 external named[38456]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 17:20:08 external named[38456]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 17:20:08 external named[38456]: generating session key for dynamic DNS
+Oct 15 17:20:08 external named[38456]: sizing zone task pool based on 8 zones
+Oct 15 17:20:08 external named[38456]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:20:08 external named[38456]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 17:20:08 external named[38456]: automatic empty zone: HOME.ARPA
+Oct 15 17:20:08 external named[38456]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:20:08 external named[38456]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:20:08 external named[38456]: command channel listening on 127.0.0.1#953
+Oct 15 17:20:08 external named[38456]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:20:08 external named[38456]: command channel listening on ::1#953
+Oct 15 17:20:08 external named[38456]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 17:20:08 external named[38456]: managed-keys-zone: loaded serial 20
+Oct 15 17:20:08 external named[38456]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: zone example.com/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: zone localhost/IN: loaded serial 0
+Oct 15 17:20:08 external named[38456]: all zones loaded
+Oct 15 17:20:08 external named[38456]: running
+Oct 15 17:20:08 external named[38456]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 17:20:08 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 17:20:08 external named[38456]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:2d::d#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:a8::e#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:7fe::53#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:dc3::35#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:9f::42#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:1::53#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:2f::f#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:200::b#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:500:2::c#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './NS/IN': 2001:7fd::1#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+Oct 15 17:20:08 external named[38456]: network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+Oct 15 17:20:08 external named[38456]: managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+Oct 15 17:20:09 external named[38456]: resolver priming query complete
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:a83e::2:30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:500:856e::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:500:d937::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:502:7094::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:39c1::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:502:1ca1::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:d414::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:83eb::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:502:8cc::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:eea3::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:d2d::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:503:231d::2:30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:501:b1f9::30#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:4860:4802:34::a#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:4860:4802:36::a#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:4860:4802:32::a#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'www.google.com/A/IN': 2001:4860:4802:38::a#53
+Oct 15 17:20:37 external named[38456]: network unreachable resolving 'google.com/DS/IN': 2001:503:eea3::30#53
+Oct 15 17:29:26 external named[38456]: client @0x7f06240d4730 192.168.10.210#59371 (example.com): transfer of 'example.com/IN': AXFR started (serial 0)
+Oct 15 17:29:26 external named[38456]: client @0x7f06240d4730 192.168.10.210#59371 (example.com): transfer of 'example.com/IN': AXFR ended
+Oct 15 17:29:27 external named[38456]: client @0x7f061c001b80 192.168.10.210#37249 (10.168.192.in-addr.arpa): transfer of '10.168.192.in-addr.arpa/IN': AXFR started (serial 0)
+Oct 15 17:29:27 external named[38456]: client @0x7f061c001b80 192.168.10.210#37249 (10.168.192.in-addr.arpa): transfer of '10.168.192.in-addr.arpa/IN': AXFR ended
+Oct 15 17:49:41 external systemd[1]: Starting dnf makecache...
+Oct 15 17:49:42 external dnf[38698]: Metadata cache refreshed recently.
+Oct 15 17:49:42 external systemd[1]: Started dnf makecache.
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:48::1#53
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:c::1#53
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:f::1#53
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:e::1#53
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:40::1#53
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/A/IN': 2001:500:b::1#53
+Oct 15 17:49:44 external named[38456]: network unreachable resolving 'mirrorlist.centos.org/AAAA/IN': 2001:500:e::1#53
+Oct 15 17:49:46 external named[38456]: network unreachable resolving 'mirror.opensourcelab.co.kr/AAAA/IN': 2001:dc5:a::1#53
+Oct 15 17:49:46 external named[38456]: network unreachable resolving 'mirror.opensourcelab.co.kr/AAAA/IN': 2001:dcc:4::1#53
+Oct 15 17:49:46 external named[38456]: network unreachable resolving 'mirror.opensourcelab.co.kr/AAAA/IN': 2001:dcc:6::1#53
+Oct 15 17:49:46 external named[38456]: network unreachable resolving 'mirror.opensourcelab.co.kr/AAAA/IN': 2001:dcc:5::100#53
+Oct 15 17:49:46 external named[38456]: network unreachable resolving 'mirror.opensourcelab.co.kr/A/IN': 2001:dc5:a::1#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2a01:618:400::1#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2001:502:ad09::3#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2a01:618:404::1#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2401:fd80:400::1#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/A/IN': 2401:fd80:404::1#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2001:502:ad09::3#53
+Oct 15 17:49:47 external named[38456]: network unreachable resolving 'ns7.dnsever.co.uk/AAAA/IN': 2a01:618:404::1#53
+Oct 15 17:49:49 external named[38456]: network unreachable resolving 'ns-651.awsdns-17.net/AAAA/IN': 2600:9000:5307:9100::1#53
+Oct 15 17:49:49 external named[38456]: network unreachable resolving 'ns-651.awsdns-17.net/AAAA/IN': 2600:9000:5303:1300::1#53
+Oct 15 17:49:49 external named[38456]: network unreachable resolving 'ns-651.awsdns-17.net/AAAA/IN': 2600:9000:5301:d200::1#53
+Oct 15 17:49:49 external named[38456]: network unreachable resolving 'ns-651.awsdns-17.net/AAAA/IN': 2600:9000:5305:5100::1#53
+Oct 15 17:49:49 external named[38456]: network unreachable resolving 'ns-651.awsdns-17.net/A/IN': 2600:9000:5307:9100::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/A/IN': 2001:500:b::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/AAAA/IN': 2001:500:b::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/A/IN': 2001:500:c::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/AAAA/IN': 2001:500:c::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/A/IN': 2001:500:40::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/AAAA/IN': 2001:500:40::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/A/IN': 2001:500:e::1#53
+Oct 15 17:49:50 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/AAAA/IN': 2001:500:e::1#53
+Oct 15 17:49:51 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/A/IN': 2001:4178:2:1269:dead:beef:cafe:fed5#53
+Oct 15 17:49:51 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/A/IN': 2610:28:3090:3001:dead:beef:cafe:fed5#53
+Oct 15 17:49:51 external named[38456]: network unreachable resolving 'mirrors.fedoraproject.org/AAAA/IN': 2001:4178:2:1269:dead:beef:cafe:fed5#53
+Oct 15 17:53:13 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 17:53:13 external named[38456]: received control channel command 'stop'
+Oct 15 17:53:13 external named[38456]: shutting down: flushing changes
+Oct 15 17:53:13 external named[38456]: stopping command channel on 127.0.0.1#953
+Oct 15 17:53:13 external named[38456]: stopping command channel on ::1#953
+Oct 15 17:53:13 external named[38456]: no longer listening on 127.0.0.1#53
+Oct 15 17:53:13 external named[38456]: no longer listening on 192.168.10.200#53
+Oct 15 17:53:13 external named[38456]: exiting
+Oct 15 17:53:13 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 17:53:13 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:53:13 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:53:13 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 17:53:13 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 17:53:13 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:53:13 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:53:13 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 17:53:13 external bash[38875]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:53:13 external bash[38875]: zone localhost/IN: loaded serial 0
+Oct 15 17:53:13 external bash[38875]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external bash[38875]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external bash[38875]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external bash[38875]: zone example.com/IN: loaded serial 0
+Oct 15 17:53:13 external bash[38875]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 17:53:13 external named[38879]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 17:53:13 external named[38879]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 17:53:13 external named[38879]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 17:53:13 external named[38879]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 17:53:13 external named[38879]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:53:13 external named[38879]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:53:13 external named[38879]: compiled with libxml2 version: 2.9.7
+Oct 15 17:53:13 external named[38879]: linked to libxml2 version: 20907
+Oct 15 17:53:13 external named[38879]: compiled with zlib version: 1.2.11
+Oct 15 17:53:13 external named[38879]: linked to zlib version: 1.2.11
+Oct 15 17:53:13 external named[38879]: threads support is enabled
+Oct 15 17:53:13 external named[38879]: ----------------------------------------------------
+Oct 15 17:53:13 external named[38879]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 17:53:13 external named[38879]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 17:53:13 external named[38879]: corporation.  Support and training for BIND 9 are
+Oct 15 17:53:13 external named[38879]: available at https://www.isc.org/support
+Oct 15 17:53:13 external named[38879]: ----------------------------------------------------
+Oct 15 17:53:13 external named[38879]: adjusted limit on open files from 262144 to 1048576
+Oct 15 17:53:13 external named[38879]: found 2 CPUs, using 2 worker threads
+Oct 15 17:53:13 external named[38879]: using 1 UDP listener per interface
+Oct 15 17:53:13 external named[38879]: using up to 21000 sockets
+Oct 15 17:53:13 external named[38879]: loading configuration from '/etc/named.conf'
+Oct 15 17:53:13 external named[38879]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 17:53:13 external named[38879]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 17:53:13 external named[38879]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 17:53:13 external named[38879]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 17:53:13 external named[38879]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 17:53:13 external named[38879]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 17:53:13 external named[38879]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 17:53:13 external named[38879]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 17:53:13 external named[38879]: generating session key for dynamic DNS
+Oct 15 17:53:13 external named[38879]: sizing zone task pool based on 8 zones
+Oct 15 17:53:13 external named[38879]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:53:13 external named[38879]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 17:53:13 external named[38879]: automatic empty zone: HOME.ARPA
+Oct 15 17:53:13 external named[38879]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:53:13 external named[38879]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:53:13 external named[38879]: command channel listening on 127.0.0.1#953
+Oct 15 17:53:13 external named[38879]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:53:13 external named[38879]: command channel listening on ::1#953
+Oct 15 17:53:13 external named[38879]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 17:53:13 external named[38879]: managed-keys-zone: loaded serial 21
+Oct 15 17:53:13 external named[38879]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: zone localhost/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: zone example.com/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:53:13 external named[38879]: all zones loaded
+Oct 15 17:53:13 external named[38879]: running
+Oct 15 17:53:13 external named[38879]: zone example.com/IN: sending notifies (serial 0)
+Oct 15 17:53:13 external named[38879]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:7fd::1#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:200::b#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+Oct 15 17:53:13 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:a8::e#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:7fe::53#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:1::53#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:2f::f#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:2::c#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:2d::d#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:500:9f::42#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+Oct 15 17:53:13 external named[38879]: network unreachable resolving './NS/IN': 2001:dc3::35#53
+Oct 15 17:53:14 external named[38879]: managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+Oct 15 17:53:14 external named[38879]: resolver priming query complete
+Oct 15 17:55:48 external systemd[1]: Stopping Berkeley Internet Name Domain (DNS)...
+Oct 15 17:55:48 external named[38879]: received control channel command 'stop'
+Oct 15 17:55:48 external named[38879]: shutting down: flushing changes
+Oct 15 17:55:48 external named[38879]: stopping command channel on 127.0.0.1#953
+Oct 15 17:55:48 external named[38879]: stopping command channel on ::1#953
+Oct 15 17:55:48 external named[38879]: no longer listening on 127.0.0.1#53
+Oct 15 17:55:48 external named[38879]: no longer listening on 192.168.10.200#53
+Oct 15 17:55:48 external named[38879]: exiting
+Oct 15 17:55:48 external systemd[1]: Stopped Berkeley Internet Name Domain (DNS).
+Oct 15 17:55:48 external systemd[1]: Stopping Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:55:49 external systemd[1]: Stopped Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:55:49 external systemd[1]: Starting Generate rndc key for BIND (DNS)...
+Oct 15 17:55:49 external systemd[1]: Started Generate rndc key for BIND (DNS).
+Oct 15 17:55:49 external systemd[1]: Starting Set-up/destroy chroot environment for named (DNS)...
+Oct 15 17:55:49 external systemd[1]: Started Set-up/destroy chroot environment for named (DNS).
+Oct 15 17:55:49 external systemd[1]: Starting Berkeley Internet Name Domain (DNS)...
+Oct 15 17:55:49 external bash[39018]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:55:49 external bash[39018]: zone localhost/IN: loaded serial 0
+Oct 15 17:55:49 external bash[39018]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external bash[39018]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external bash[39018]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external bash[39018]: zone example.com/IN: loaded serial 10
+Oct 15 17:55:49 external bash[39018]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: starting BIND 9.11.13-RedHat-9.11.13-6.el8_2.1 (Extended Support Version) <id:ad4df16>
+Oct 15 17:55:49 external named[39022]: running on Linux x86_64 4.18.0-193.19.1.el8_2.x86_64 #1 SMP Mon Sep 14 14:37:00 UTC 2020
+Oct 15 17:55:49 external named[39022]: built with '--build=x86_64-redhat-linux-gnu' '--host=x86_64-redhat-linux-gnu' '--program-prefix=' '--disable-dependency-tracking' '--prefix=/usr' '--exec-prefix=/usr' '--bindir=/usr/bin' '--sbindir=/usr/sbin' '--sysconfdir=/etc' '--datadir=/usr/share' '--includedir=/usr/include' '--libdir=/usr/lib64' '--libexecdir=/usr/libexec' '--sharedstatedir=/var/lib' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--with-python=/usr/libexec/platform-python' '--with-libtool' '--localstatedir=/var' '--enable-threads' '--enable-ipv6' '--enable-filter-aaaa' '--with-pic' '--disable-static' '--includedir=/usr/include/bind9' '--with-tuning=large' '--with-libidn2' '--enable-openssl-hash' '--with-geoip2' '--enable-native-pkcs11' '--with-pkcs11=/usr/lib64/pkcs11/libsofthsm2.so' '--with-dlopen=yes' '--with-dlz-ldap=yes' '--with-dlz-postgres=yes' '--with-dlz-mysql=yes' '--with-dlz-filesystem=yes' '--with-dlz-bdb=yes' '--with-gssapi=yes' '--disable-isc-spnego' '--with-lmdb=no' '--with-cmocka' '--enable-fixed-rrset' '--with-docbook-xsl=/usr/share/sgml/docbook/xsl-stylesheets' '--enable-full-report' 'build_alias=x86_64-redhat-linux-gnu' 'host_alias=x86_64-redhat-linux-gnu' 'CFLAGS= -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS -fexceptions -fstack-protector-strong -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -specs=/usr/lib/rpm/redhat/redhat-annobin-cc1 -m64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection' 'LDFLAGS=-Wl,-z,relro -Wl,-z,now -specs=/usr/lib/rpm/redhat/redhat-hardened-ld' 'CPPFLAGS= -DDIG_SIGCHASE' 'PKG_CONFIG_PATH=:/usr/lib64/pkgconfig:/usr/share/pkgconfig'
+Oct 15 17:55:49 external named[39022]: running as: named -u named -c /etc/named.conf -t /var/named/chroot
+Oct 15 17:55:49 external named[39022]: compiled by GCC 8.3.1 20191121 (Red Hat 8.3.1-5)
+Oct 15 17:55:49 external named[39022]: compiled with OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:55:49 external named[39022]: linked to OpenSSL version: OpenSSL 1.1.1c FIPS  28 May 2019
+Oct 15 17:55:49 external named[39022]: compiled with libxml2 version: 2.9.7
+Oct 15 17:55:49 external named[39022]: linked to libxml2 version: 20907
+Oct 15 17:55:49 external named[39022]: compiled with zlib version: 1.2.11
+Oct 15 17:55:49 external named[39022]: linked to zlib version: 1.2.11
+Oct 15 17:55:49 external named[39022]: threads support is enabled
+Oct 15 17:55:49 external named[39022]: ----------------------------------------------------
+Oct 15 17:55:49 external named[39022]: BIND 9 is maintained by Internet Systems Consortium,
+Oct 15 17:55:49 external named[39022]: Inc. (ISC), a non-profit 501(c)(3) public-benefit
+Oct 15 17:55:49 external named[39022]: corporation.  Support and training for BIND 9 are
+Oct 15 17:55:49 external named[39022]: available at https://www.isc.org/support
+Oct 15 17:55:49 external named[39022]: ----------------------------------------------------
+Oct 15 17:55:49 external named[39022]: adjusted limit on open files from 262144 to 1048576
+Oct 15 17:55:49 external named[39022]: found 2 CPUs, using 2 worker threads
+Oct 15 17:55:49 external named[39022]: using 1 UDP listener per interface
+Oct 15 17:55:49 external named[39022]: using up to 21000 sockets
+Oct 15 17:55:49 external named[39022]: loading configuration from '/etc/named.conf'
+Oct 15 17:55:49 external named[39022]: unable to open '/etc/bind.keys'; using built-in keys instead
+Oct 15 17:55:49 external named[39022]: looking for GeoIP2 databases in '/usr/share/GeoIP'
+Oct 15 17:55:49 external named[39022]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-Country.mmdb'
+Oct 15 17:55:49 external named[39022]: opened GeoIP2 database '/usr/share/GeoIP/GeoLite2-City.mmdb'
+Oct 15 17:55:49 external named[39022]: using default UDP/IPv4 port range: [1024, 65535]
+Oct 15 17:55:49 external named[39022]: using default UDP/IPv6 port range: [1024, 65535]
+Oct 15 17:55:49 external named[39022]: listening on IPv4 interface lo, 127.0.0.1#53
+Oct 15 17:55:49 external named[39022]: listening on IPv4 interface ens33, 192.168.10.200#53
+Oct 15 17:55:49 external named[39022]: generating session key for dynamic DNS
+Oct 15 17:55:49 external named[39022]: sizing zone task pool based on 8 zones
+Oct 15 17:55:49 external named[39022]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:55:49 external named[39022]: set up managed keys zone for view _default, file '/var/named/dynamic/managed-keys.bind'
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 10.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 16.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 17.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 18.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 19.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 20.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 21.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 22.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 23.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 24.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 25.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 26.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 27.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 28.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 29.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 30.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 31.172.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 168.192.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 64.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 65.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 66.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 67.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 68.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 69.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 70.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 71.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 72.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 73.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 74.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 75.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 76.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 77.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 78.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 79.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 80.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 81.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 82.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 83.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 84.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 85.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 86.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 87.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 88.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 89.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 90.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 91.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 92.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 93.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 94.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 95.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 96.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 97.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 98.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 99.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 100.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 101.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 102.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 103.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 104.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 105.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 106.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 107.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 108.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 109.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 110.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 111.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 112.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 113.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 114.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 115.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 116.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 117.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 118.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 119.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 120.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 121.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 122.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 123.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 124.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 125.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 126.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 127.100.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 127.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 254.169.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 2.0.192.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 100.51.198.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 113.0.203.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: D.F.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 8.E.F.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 9.E.F.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: A.E.F.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: B.E.F.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: EMPTY.AS112.ARPA
+Oct 15 17:55:49 external named[39022]: automatic empty zone: HOME.ARPA
+Oct 15 17:55:49 external named[39022]: none:104: 'max-cache-size 90%' - setting to 856MB (out of 952MB)
+Oct 15 17:55:49 external named[39022]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:55:49 external named[39022]: command channel listening on 127.0.0.1#953
+Oct 15 17:55:49 external named[39022]: configuring command channel from '/etc/rndc.key'
+Oct 15 17:55:49 external named[39022]: command channel listening on ::1#953
+Oct 15 17:55:49 external named[39022]: managed-keys-zone: journal file is out of date: removing journal file
+Oct 15 17:55:49 external named[39022]: managed-keys-zone: loaded serial 22
+Oct 15 17:55:49 external named[39022]: zone 0.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: zone 10.168.192.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: zone localhost.localdomain/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: zone example.com/IN: loaded serial 10
+Oct 15 17:55:49 external named[39022]: zone 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: zone 1.0.0.127.in-addr.arpa/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: zone localhost/IN: loaded serial 0
+Oct 15 17:55:49 external named[39022]: all zones loaded
+Oct 15 17:55:49 external named[39022]: running
+Oct 15 17:55:49 external systemd[1]: Started Berkeley Internet Name Domain (DNS).
+Oct 15 17:55:49 external named[39022]: zone example.com/IN: sending notifies (serial 10)
+Oct 15 17:55:49 external named[39022]: zone 10.168.192.in-addr.arpa/IN: sending notifies (serial 0)
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:7fd::1#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:7fd::1#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:503:ba3e::2:30#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:12::d0d#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:12::d0d#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:503:c27::2:30#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:503:c27::2:30#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:a8::e#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:a8::e#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:7fe::53#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:7fe::53#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:1::53#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:1::53#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:200::b#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:200::b#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:2d::d#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:2d::d#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:2f::f#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:2f::f#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:2::c#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:2::c#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:500:9f::42#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:500:9f::42#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './DNSKEY/IN': 2001:dc3::35#53
+Oct 15 17:55:49 external named[39022]: network unreachable resolving './NS/IN': 2001:dc3::35#53
+Oct 15 17:55:49 external named[39022]: client @0x7f99780d4730 192.168.10.210#52673 (example.com): transfer of 'example.com/IN': AXFR-style IXFR started (serial 10)
+Oct 15 17:55:49 external named[39022]: client @0x7f99780d4730 192.168.10.210#52673 (example.com): transfer of 'example.com/IN': AXFR-style IXFR ended
+Oct 15 17:55:50 external named[39022]: managed-keys-zone: Key 20326 for zone . acceptance timer complete: key now trusted
+Oct 15 17:55:50 external named[39022]: resolver priming query complete

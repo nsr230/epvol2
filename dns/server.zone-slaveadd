@@ -1,0 +1,35 @@
+$TTL 4
+@	IN SOA ns1.example.com. root.example.com. (
+					10      ; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	NS	@
+	A	127.0.0.1
+	AAAA	::1
+	IN	NS	ns1
+	IN	NS	ns2
+ns1	IN	A	192.168.10.200
+ns2	IN	A	192.168.10.210
+
+;; web server
+;;www	IN	A	192.168.10.200
+www	IN	A	192.168.10.220
+www	IN	A	192.168.10.221
+www	IN	A	192.168.10.222
+
+;; file server
+ftp	IN	A	192.168.10.100
+
+;; mail server
+example.com.	IN	MX 10 mail.example.com.
+mail	IN	A	192.168.10.252
+
+;; community
+cafe	IN	A	192.168.10.174
+test	IN	A	192.168.10.124
+
+;; alias
+contents	IN	CNAME	www
+
